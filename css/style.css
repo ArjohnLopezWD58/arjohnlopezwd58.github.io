@@ -1,12 +1,24 @@
 *{padding: 0; margin: 0; box-sizing: border-box;}
 body{
-    overflow: hidden;
+    position: relative;
+  
 }
 h1{
     font-family: 'Dancing Script', cursive;
 }
 .carousel-item img{
-    width: 100%;
+    width: 80%;
     height: 80vh;
-    
 }
+.card-body img{
+    min-width: 50%;
+    max-height: 200px;
+}
+
+.dropdown-menu{
+    background-color: #2a252e;
+}
+.dropdown-item{
+    color: #f9f06d;
+}
+
