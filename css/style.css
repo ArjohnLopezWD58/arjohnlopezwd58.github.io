@@ -422,4 +422,8 @@ footer a span{
 .about-page .about-main-section p{
     font-size: 14px;
 }
+.about-page .about-main-section .btn{
+    width: 200px;
+    margin-bottom: 20px;
+}
 /* ABOUT PAGE END*/
