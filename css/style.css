@@ -28,7 +28,7 @@ body{
     color: #fff !important;
     font-weight: bold;
     margin: 5px 5px;
-    transition: 0.2s;
+    transition: 0.3s;
 }
 .btn:hover{
     letter-spacing: 3px;
@@ -62,6 +62,9 @@ html::-webkit-scrollbar-track{
     background: rgba(22, 65, 65);
 }
 /* Navbar Section Start*/
+.home-page nav{
+    background: rgba(51, 51, 51);
+}
 .navbar{
     padding: 20px;
     display: flex;
@@ -235,25 +238,25 @@ html::-webkit-scrollbar-track{
 /* Latest Car Section End*/
 
 /* Car Parts Section Start*/
-.car-parts{
+.car_parts{
     margin-bottom: 200px;
     position: relative;
 }
-.car-parts .custom_car_parts{
+.car_parts .custom_car_parts{
     padding: 40px;
     background: rgba(72, 68, 68);
     border-radius: 10px;
 }
-.car-parts .box{
+.car_parts .box{
     display: flex;
     justify-content: space-between;
     cursor: pointer;
 }
-.car-parts .box img{
-    height: 170px;
+.car_parts .box img{
+    height: 175px;
     width: 350 !important;
 }
-.car-parts .carousel-control-prev  .car-parts .carousel-control-next{
+.car_parts .carousel-control-prev, .car_parts .carousel-control-next{
     opacity: 0.8;
     height: 32px;
     width: 32px;
@@ -265,41 +268,43 @@ html::-webkit-scrollbar-track{
     padding: 10px;
     transition: 1s ease-in-out;
 }
-.car-parts .carousel-control-prev:hover .car-parts z.carousel-control-next:hover{
+.car_parts .carousel-control-prev:hover, .car_parts .carousel-control-next:hover{
     background: #fff;
 }
-.car-parts .carousel-item .box h4{
+.car_parts .carousel-item .box h4{
     font-weight: bold;
     font-size: 50px;
     margin: 20px auto;
     color: #ccc;
 }
-.car-parts .carousel-item .box p{
+.car_parts .carousel-item .box p{
     font-weight: bold;
     font-size: 12px;
     color: #ccc;
 }
-.car-parts .carousel-item .box .btn{
+.car_parts .carousel-item .box .btn{
     border-radius: 10px;
     width: 200px;
-    letter-spacing: 2px;
 }
-.car-parts .carousel-item .custom-box{
+.car_parts .carousel-item .box .btn:hover{
+ letter-spacing: 2px;
+}
+.car_parts .carousel-item .custom-box{
     box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.2), 
-    inset 10px, 10px, 10px, -10px rgba(0, 0, 0, 0.7);
+    inset 10px 10px 10px -10px rgba(0, 0, 0, 0.7);
     padding: 30px;
-    margin-top: 50px;
+    margin-top: 30px;
     color: #fff !important;
     text-align: center;
     border-radius: 10px;
 }
-.car-parts .carousel-item .custom-box .svgContent h6 span{
+.car_parts .carousel-item .custom-box .svgContent h6 span{
     font-weight: 800;
     color: #ff0000 !important;
     font-size: 1.1em;
 
 }
-.car-parts .carousel-item .custom-box .svgContent h6{
+.car_parts .carousel-item .custom-box .svgContent h6{
     font-weight: 600;
     font-size: 1em;
 }
@@ -401,6 +406,9 @@ footer a span{
     color: #fff !important;
     overflow: hidden;
 }
+.about-page nav{
+    background: rgba(51, 51, 51);
+}
 .about-page .about-main-section{
     margin: 160px  auto;
 }
@@ -427,3 +435,129 @@ footer a span{
     margin-bottom: 20px;
 }
 /* ABOUT PAGE END*/
+
+/* CONTACT US PAGE START*/
+.cars-main-page nav{
+    background: rgba(51, 51, 51);
+}
+.contact-us-main-page{
+    margin: 160px;
+}
+.contact-us-main-page img{
+    margin-top: 50px;
+    cursor: pointer;
+}
+.contact-us-main-page .col-sm-5 h6{
+    font-weight: bold;
+    text-align: center;
+    margin: 10px auto;
+    font-size: 30px;
+}
+.contact-us-main-page .offset-sm-2 form{
+    margin-top: 10px;
+}
+.contact-us-main-page .offset-sm-2 form input,textarea{
+    background: none !important;
+    outline: none !important;
+    color: #fff !important;
+}
+.contact-us-main-page .offset-sm-2 form input,textarea::placeholder{
+    color: #fff !important;
+}
+/* CONTACT US PAGE END*/
+
+/* CARS PAGE START*/
+.cars-main-page nav{
+    background: rgba(51, 51, 51);
+}
+.cars-main-section{
+    margin: 200px auto;
+}
+.cars-main-section .box{
+    box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.5), 
+    inset 10px 10px 10px -10px rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    margin-bottom: 60px;
+    text-align: center;
+    background: #5c5353;
+    color: #fff !important;
+    cursor: pointer;
+    border-radius: 15px;
+    height: 500px;
+    transition: 0.5s ease-in-out;
+}
+.cars-main-section .box:hover{
+    background: #000;
+}
+.cars-main-section .box h6{
+    font-weight: bold;
+    font-size: 30px;
+}
+.cars-main-section .box .fas{
+    font-size: 35px;
+    color: #ff0000;
+}
+.cars-main-section .box p{
+    font-weight: 500;
+    font-size: 17px;
+    margin: 10px auto;
+}
+.cars-main-section .box .btn{
+    width: 200px;
+}
+/* CARS PAGE END*/
+
+/* BUY MAIN PAGE START*/
+.buy-main-page{
+    overflow: hidden;
+    color: #fff;
+}
+.buy_main_header{
+    margin: 200px auto;
+}
+.buy_main_header img{
+    height: 350px;
+
+}
+.buy_main_header .offset-sm-2 p{
+    font-weight: 100;
+    color: #e0761f;
+    font-size: 11px;
+}
+.buy_main_header .fas{
+    font-size: 30px;
+    margin: 5px auto;
+    color: #ff0000;
+}
+.buy_main_header .offset-sm-2 h6{
+    font-weight: bold;
+    font-size: 20px;
+}
+.buy_main_header .offset-sm-2 span{
+    margin: 5px auto;
+}
+.buy_main_header .btn{
+    width: 150px;
+    margin: 10px auto;
+
+}
+/*Modal*/
+.buy-main-page .modal-body{
+    background: linear-gradient(rgba(24,22,22), #6a6d6e);
+    color: #fff !important;
+}
+.buy-main-page .modal img{
+    margin-top: 100px;
+}
+.buy-main-page .modal .btn_custom{
+    border: 1px solid #ff0000;
+    color: #fff;
+    font-weight: 600;
+    padding: 8px 20px;
+    width: 350px;
+    margin: 10px auto;
+    border-radius: 10px;
+    cursor: pointer;
+    background: transparent;
+}
+/* BUY MAIN PAGE END*/
