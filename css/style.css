@@ -267,6 +267,8 @@ html::-webkit-scrollbar-track{
     margin: 150px 10px;
     padding: 10px;
     transition: 1s ease-in-out;
+    margin-left: -50px;
+    margin-right: -50px;
 }
 .car_parts .carousel-control-prev:hover, .car_parts .carousel-control-next:hover{
     background: #fff;
@@ -547,6 +549,14 @@ footer a span{
     color: #fff !important;
 }
 .buy-main-page .modal img{
+    margin-top: 30px;
+    height: 280px;
+}
+.buy-main-page .modal .h3{
+    font-weight: bold;
+    font-size: 17px;
+}
+.buy-main-page #creatPopup img{
     margin-top: 100px;
 }
 .buy-main-page .modal .btn_custom{
@@ -559,5 +569,98 @@ footer a span{
     border-radius: 10px;
     cursor: pointer;
     background: transparent;
+    transition: 0.5s;
+    margin-bottom: 40px;
+}
+.buy-main-page .modal .btn_custom:hover{
+    background: #ff0000;
+    color: #fff;
+    letter-spacing: 3px;
+}
+.buy-main-page .modal span{
+    display: flex;
+    justify-content: center;
+    font-size: 17px;
+    font-weight: 600;
+}
+.buy-main-page .modal form{
+    margin-top: 5px !important;
+}
+.buy-main-page .modal form input{
+    background: none !important;
+    color: #fff !important;
+}
+.buy-main-page .modal form input::placeholder{
+    color: #ccc !important;
+}
+.buy-main-page .modal form .btn{
+    width: 155px;
+}
+.buy-main-page .modal form .btn:hover{
+    letter-spacing: 1px;
 }
 /* BUY MAIN PAGE END*/
+
+/* SELL OR BUY PAGE START*/
+.buycar_page .navbar img{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+.buycar_page .navbar .btn{
+    margin-top: 30px;
+}
+.buy_car{
+    margin-top: 150px;
+}
+.buy_car .container .col-sm-4, .buy_car .col-sm-5{
+    background: #6a6d6e;
+    min-height: 500px;
+}
+.buy_car .container h6{
+    font-weight: bold;
+    margin: 10px auto;
+    font-size: 30px;
+    color: #fff !important;
+}
+.buy_car form{
+    color: #ccc !important;
+}
+.buy_car input{
+    outline: none !important;
+    background: none !important;
+    color: #fff;
+}
+.buy_car input::placeholder{
+    color: #ccc !important;
+
+}
+.buy_car .icon{
+    margin: 20px auto;
+}
+.buy_car .icon i{
+    font-size: 40px;
+    color: #ff0000;
+    margin: 5px 15px;
+
+}
+.buy_car .col-sm-5{
+    position: fixed;
+    right: 20px;
+}
+.buy_car .col-sm-5 img{
+    margin-top: 50px;
+
+}
+/* SELL OR BUY PAGE END*/
+@media screen and (min-width: 320px) {
+    .body  {
+      width: 100%;}
+    
+    .navbar{
+       width: 100%
+    }
+    section{
+        width: 100%
+    }
+}
