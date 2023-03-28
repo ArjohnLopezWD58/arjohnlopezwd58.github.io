@@ -1,21 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap");
 /* Global Variables*/
-:root{
-    --main: #ff0000;
-    --main: #000;
-    --main: #fff;
-}
 ::selection{
-    background: var(--main);
-    color: var(--white) !important;
+    background: #ff0000;
+    color: #fff !important;
 }
 *{
-    font-family: sans-serif;
+    font-family: "STIX Two Text", serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style: none !important;
     text-decoration: none !important;
-    transition: 0.3s;
 }
 body{
     background: linear-gradient(rgba(22,24,22,22), #6a6d6e);
@@ -59,17 +54,17 @@ html::-webkit-scrollbar{
     width: 10px;
 }
 html::-webkit-scrollbar-track{
-    background: rgba(22, 65, 65);
+    background: rgba(82, 65, 65);
 }
 /* Navbar Section Start*/
-.home-page nav{
+.Home_page .navbar{
     background: rgba(51, 51, 51);
 }
 .navbar{
     padding: 20px;
     display: flex;
     justify-content: space-between;
-    transition: 1s ease-in-outz;
+    transition: 1s ease-in-out;
 }
 .navbar .scroll{
     background: rgba(133, 126, 126);
@@ -88,19 +83,15 @@ html::-webkit-scrollbar-track{
 .navbar-nav{
     padding-right: 40px;
 }
-.navbar .nav-link{
+.nav-link{
     font-weight: bold;
     color: #fff !important;
     margin-left: 5px;
 }
 .navbar .nav-item .active{
-    background-color: #ff0000;
-    border-radius: 5px;
-}
-.navbar .btn{
-    background-color: #ff0000;
-    width: 100px;
-    border-radius: 5px;
+    background: #ff0000;
+    color: #fff;
+     border-radius: 5px;
 }
 /* Navbar Section End*/
 
@@ -114,8 +105,15 @@ html::-webkit-scrollbar-track{
 }
 .header .col-sm-7 img{
     height: 500 !important;
-    width: 930px !important;
+    width: 830px !important;
 }
+.header .col-sm-5 {
+    margin-left: -100px;
+    z-index: 2;
+  }
+  .header .text-section p{
+    color: #ccc;
+  }
 .header .text-section h3{
     font-family: 600;
     font-size: 56px;
@@ -123,15 +121,32 @@ html::-webkit-scrollbar-track{
     margin-bottom: 30px;
 }
 .header .text-section h3 span{
-    color: #ff0000 !important;
+    color: #ff0000;
     font-weight: 800;
     font-size: 1.5em !important;
 }
-.header .text-section p{
-    font-weight: 700;
+.header .text-section span{
     font-size: 13px;
     color: #fff;
-}
+    font-weight: 700;
+  }
+  .header .button-section {
+    margin-top: 20px;
+  }
+  .header .button-section a {
+    margin-right: 10px !important;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: 0.3s;
+    width: 150px;
+    font-weight: bold;
+  }
+  .header .button-section a:hover {
+    background: none;
+    color: #fff !important;
+    letter-spacing: 5px;
+  }
 .header .img-overlay{
     position: absolute;
     top: 0;
@@ -146,7 +161,7 @@ html::-webkit-scrollbar-track{
 
 /* Popular Cars Section Start*/
 .popular{
-    margin: 200px auto;
+    margin: 400px auto;
 }
 .popular .row{
     margin-bottom: 50px;
@@ -168,16 +183,16 @@ html::-webkit-scrollbar-track{
 .popular .box_content{
     text-align: center;
 }
-.popular .box_content h6{
-    font-weight: 600;
+.popular .box .box_content h6{
+    font-weight: 650;
     font-size: 15px;
     color: #ccc;
 }
 /* Popular Cars Section End*/
 
 /* Offer Section Start*/
-.offer .container{
-    margin-bottom: 200px;
+.offer{
+    margin-bottom: 400px;
 }
 .offer .row{
     margin: 10px auto;
@@ -188,14 +203,15 @@ html::-webkit-scrollbar-track{
     border-radius: 20px;
     transition: 0.8s ease-in-out;
     cursor: pointer;
-    color: #fff !important;
+    color: #fff;
     text-align: center;
-}
-.offer .box .btn{
-    width: 300px;
 }
 .offer .box:hover{
     background: #000;
+}
+.offer .boxcontent{
+    padding: 5px;
+    text-align: center;
 }
 .offer .boxcontent h6{
     font-weight: bold;
@@ -203,6 +219,22 @@ html::-webkit-scrollbar-track{
     font-size: 20px;
     margin: 10px auto;
 }
+.offer .boxcontent span {
+    font-weight: bold;
+    font-size: 12px;
+  }
+  .offer .boxcontent a {
+    font-weight: bold;
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 150px;
+    transition: 0.8s ease-in-out;
+  }
+  .offer .boxcontent a:hover {
+    background: none;
+    color: #ff0000;
+    width: 200px;
+  }
 .offer .last{
     margin: 50px auto;
 }
@@ -210,39 +242,57 @@ html::-webkit-scrollbar-track{
 
 /* Latest Car Section Start*/
 .latest_car{
-    margin-bottom: 200px;
+    margin-bottom: 400px;
 }
 .latest_car .box{
     background: rgba(125, 124, 125);
     padding: 20px;
-    border-radius: 20px;
+    cursor: pointer;
+    border-radius: 10px;
     transition: 0.8s ease-in-out;
     cursor: pointer;
-    color: #fff !important;
     text-align: center;
+    transition: 1s;
+    margin-top: 60px;
     height: 400px;
     width: 350px;
 }
 .latest_car .box:hover{
     background: #000;
 }
-.latest_car .btn{
-    width: 200px;
-}
-.latest_car .row{
-    margin: 50px auto;
-}
 .latest_car .box_content{
-    margin: 5px auto;
+    margin: 10px auto;
+    color: #fff;
 }
+.latest_car .box_content h6 {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    text-transform: capitalize;
+  }
+  .latest_car .box_content span {
+    font-weight: bold;
+    font-size: 12px;
+  }
+  .latest_car .box_content a {
+    width: 150px;
+    border-radius: 10px;
+    margin-top: 10px;
+    transition: 0.7s;
+  }
+  .latest_car .box_content a:hover {
+    width: 200px;
+    background: none;
+    color: #ff0000;
+  }
 /* Latest Car Section End*/
 
 /* Car Parts Section Start*/
 .car_parts{
-    margin-bottom: 200px;
+    margin-bottom: 400px;
     position: relative;
 }
-.car_parts .custom_car_parts{
+.car_parts .custom-car-parts{
     padding: 40px;
     background: rgba(72, 68, 68);
     border-radius: 10px;
@@ -252,9 +302,10 @@ html::-webkit-scrollbar-track{
     justify-content: space-between;
     cursor: pointer;
 }
-.car_parts .box img{
-    height: 175px;
-    width: 350 !important;
+.car_parts .container img{
+    height: 310px;
+    width: 350px !important;
+    height: 250px;
 }
 .car_parts .carousel-control-prev, .car_parts .carousel-control-next{
     opacity: 0.8;
@@ -267,8 +318,6 @@ html::-webkit-scrollbar-track{
     margin: 150px 10px;
     padding: 10px;
     transition: 1s ease-in-out;
-    margin-left: -50px;
-    margin-right: -50px;
 }
 .car_parts .carousel-control-prev:hover, .car_parts .carousel-control-next:hover{
     background: #fff;
@@ -279,26 +328,34 @@ html::-webkit-scrollbar-track{
     margin: 20px auto;
     color: #ccc;
 }
-.car_parts .carousel-item .box p{
+.car_parts .carousel-item .box span{
     font-weight: bold;
     font-size: 12px;
     color: #ccc;
 }
-.car_parts .carousel-item .box .btn{
+.car_parts .carousel-item .box button{
     border-radius: 10px;
-    width: 200px;
+     width: 200px;
+    font-weight: bold;
+     margin: 20px auto;
+    letter-spacing: 2px;
+    transition: 1s ease-in;
 }
-.car_parts .carousel-item .box .btn:hover{
- letter-spacing: 2px;
+.car_parts .carousel-item .box .button:hover{
+    width: 250px;
+    background: none;
+    letter-spacing: 5px;
+    color: #ff0000 !important;
 }
 .car_parts .carousel-item .custom-box{
     box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.2), 
     inset 10px 10px 10px -10px rgba(0, 0, 0, 0.7);
     padding: 30px;
-    margin-top: 30px;
+    margin-top: 50px;
     color: #fff !important;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 20px;
+    cursor: pointer;
 }
 .car_parts .carousel-item .custom-box .svgContent h6 span{
     font-weight: 800;
@@ -307,14 +364,16 @@ html::-webkit-scrollbar-track{
 
 }
 .car_parts .carousel-item .custom-box .svgContent h6{
-    font-weight: 600;
-    font-size: 1em;
+     /* margin: 5px; */
+  font-weight: 600;
+  /* font-size: 18px; */
+  font-size: 1em;
 }
 /* Car Parts Section End*/
 
 /* Latest News Section Start*/
 .latest_news{
-    margin-bottom: 200px;
+    margin: 400px auto;
 }
 .latest_news .box{
     background: rgba(72, 68, 68);
@@ -322,6 +381,7 @@ html::-webkit-scrollbar-track{
     cursor: pointer;
     text-align: center;
     border-radius: 20px;
+    transition: 0.9s ease-out;
     height: 400px;
     margin-top: 50px;
 }
@@ -330,14 +390,14 @@ html::-webkit-scrollbar-track{
 }
 .latest_news .boxcontent{
     margin: 10px auto;
-    color: #fff;
+    color: #ccc;
 
 }
 .latest_news .boxcontent h6{
     font-weight: bold;
     font-size: 25px;
 }
-.latest_news .boxcontent p{
+.latest_news .boxcontent span{
     font-weight: bold;
     font-size: 12px;
 }
@@ -405,7 +465,7 @@ footer a span{
 
 /* ABOUT PAGE START*/
 .about-page{
-    color: #fff !important;
+    color: #fff;
     overflow: hidden;
 }
 .about-page nav{
@@ -433,39 +493,40 @@ footer a span{
     font-size: 14px;
 }
 .about-page .about-main-section .btn{
-    width: 200px;
     margin-bottom: 20px;
+    background: #ff0000;
+    color: #fff;
+    border-radius: 10px;
+    width: 200px;
+    transition: 0.3s;
 }
 /* ABOUT PAGE END*/
 
 /* CONTACT US PAGE START*/
-.cars-main-page nav{
-    background: rgba(51, 51, 51);
-}
 .contact-us-main-page{
-    margin: 160px;
+    margin: 200px auto;
 }
 .contact-us-main-page img{
-    margin-top: 50px;
-    cursor: pointer;
+    margin-top: 40px;
 }
-.contact-us-main-page .col-sm-5 h6{
+.contact-us-main-page h6{
     font-weight: bold;
-    text-align: center;
-    margin: 10px auto;
-    font-size: 30px;
+  margin-top: 20px;
+  color: #fff !important;
+  text-align: center;
+  font-size: 30px;
 }
-.contact-us-main-page .offset-sm-2 form{
-    margin-top: 10px;
-}
-.contact-us-main-page .offset-sm-2 form input,textarea{
+.contact-us-main-page form input,textarea{
     background: none !important;
     outline: none !important;
     color: #fff !important;
 }
-.contact-us-main-page .offset-sm-2 form input,textarea::placeholder{
+.contact-us-main-page form input::placeholder textarea::placeholder{
     color: #fff !important;
 }
+.contact_us_main_page {
+    overflow: hidden;
+  }
 /* CONTACT US PAGE END*/
 
 /* CARS PAGE START*/
@@ -513,6 +574,9 @@ footer a span{
 .buy-main-page{
     overflow: hidden;
     color: #fff;
+}
+.buy-main-page nav{
+    background: rgba(51, 51, 51);
 }
 .buy_main_header{
     margin: 200px auto;
@@ -599,6 +663,7 @@ footer a span{
 .buy-main-page .modal form .btn:hover{
     letter-spacing: 1px;
 }
+
 /* BUY MAIN PAGE END*/
 
 /* SELL OR BUY PAGE START*/
@@ -613,7 +678,7 @@ footer a span{
 .buy_car{
     margin-top: 150px;
 }
-.buy_car .container .col-sm-4, .buy_car .col-sm-5{
+.buy_car .container .col-sm-4, .buy_car .col-sm-6{
     background: #6a6d6e;
     min-height: 500px;
 }
@@ -641,16 +706,24 @@ footer a span{
 .buy_car .icon i{
     font-size: 40px;
     color: #ff0000;
-    margin: 5px 15px;
-
+    margin: 0px 10px;
 }
-.buy_car .col-sm-5{
+.buy_car .icon span{
+    font-weight: 600;
+    font-size: 45px;
+    color: #ccc;
+}
+.buy_car .col-sm-6{
     position: fixed;
     right: 20px;
 }
-.buy_car .col-sm-5 img{
+.buy_car .col-sm-6 img{
+    position: fixed;
+    margin-top: 10px;
+}
+.buy_car .col-sm-6 img{
     margin-top: 50px;
-
+    cursor: pointer;
 }
 /* SELL OR BUY PAGE END*/
 @media screen and (min-width: 320px) {
