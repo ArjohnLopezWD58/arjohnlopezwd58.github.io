@@ -17,24 +17,36 @@
 <body class="buy-main-page">
     <!--**************Navbar Section Start*****************-->
     <nav class="navbar navbar-expand-sm px-4 border-bottom fixed-top">
-
-        <a href="index.html" class="navbar-brand"><span>Juan</span>Stuff Shop</a>
-        <div>
-            <ul class="navbar-nav">
+        <div class="container-fluid menu_area">
+            <a href="index.html" class="navbar-brand"><span>Juan</span>Stuff Shop</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
                 <li class="nav-item"><a href="About.html" class="nav-link">About</a></li>
                 <li class="nav-item"><a href="contact-us.html" class="nav-link">Contact</a></li>
-                <li class="nav-item"><a href="brandnew.html" class="nav-link">Brandnew</a></li>
-                <li class="nav-item"><a href="2nd-hand.html" class="nav-link">2nd-Hand</a></li>
+                <li class="nav-item"> 
+                <div class="dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="brandnew.html" class="nav-link">Brandnew</a></li>
+                        <li><a class="dropdown-item" href="2nd-hand.html" class="nav-link">2nd-Hand</a></li>
+                        <li><a class="dropdown-item" href="Sold.html" class="nav-link">Sold</a></li>
+                     </ul>
+                </div>
+              </li>
             </ul>
+            <div>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="sellPage.html" class="nav-link btn">Sell</a></li>
+                    <li class="nav-item"><a href="mainBuy.html" class="nav-link btn">Buy+</a></li>
+                </ul>
+            </div>
+          </div>
         </div>
-        <div>
-            <ul class="navbar-nav">
-                <li class="nav-item"><a href="sellPage.html" class="nav-link btn">Sell</a></li>
-                <li class="nav-item"><a href="mainBuy.html" class="nav-link btn active">Buy+</a></li>
-            </ul>
-        </div>
-    </nav>
+      </nav>
 <!--**************Navbar Section End*****************-->
 
 

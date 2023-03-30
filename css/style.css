@@ -60,11 +60,44 @@ html::-webkit-scrollbar-track{
 .Home_page .navbar{
     background: rgba(51, 51, 51);
 }
-.navbar{
+.menu_area .dropdown-menu .navbar-nav .nav-item{
+    position: relative;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    float: left;
+    width: 136px;
+    height: 50px;
+    line-height: 50px;
+}
+.dropdown-menu{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    padding: 0;
+    background: transparent;
+    border: none;
+}
+.dropdown-item{
+    color: #fff;
+}
+.menu_area .navbar{
     padding: 20px;
     display: flex;
     justify-content: space-between;
     transition: 1s ease-in-out;
+    align-items: center;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.menu_area .navbar-nav{
+    padding: 0;
+    margin: 0;
+    background: #313131;
 }
 .navbar .scroll{
     background: rgba(133, 126, 126);

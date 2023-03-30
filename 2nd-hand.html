@@ -10,127 +10,174 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="js/bootstrap.bundle.min.js"></script>
     <!--========== Link Custom Css  ===============-->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/2nd.css">
     <!--=========== Link Font Awesome ======-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 </head>
-<body class="Home_page">
+<body class="Second_Hand">
     
  <!--================== Navbar Section Start ==================-->
-<nav class="navbar navbar-expand-sm px-4 border-bottom fixed-top">
-
-    <a href="index.html" class="navbar-brand"><span>Juan</span>Stuff Shop</a>
-    </button>
-    <div>
-        <ul class="navbar-nav">
+ <nav class="navbar navbar-expand-sm px-4 border-bottom fixed-top">
+    <div class="container-fluid menu_area">
+        <a href="index.html" class="navbar-brand"><span>Juan</span>Stuff Shop</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
             <li class="nav-item"><a href="About.html" class="nav-link">About</a></li>
             <li class="nav-item"><a href="contact-us.html" class="nav-link">Contact</a></li>
-            <li class="nav-item"><a href="brandnew.html" class="nav-link">Brandnew</a></li>
-            <li class="nav-item"><a href="2nd-hand.html" class="nav-link active">2nd-Hand</a></li>
+            <li class="nav-item"> 
+            <div class="dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="brandnew.html" class="nav-link">Brandnew</a></li>
+                    <li><a class="dropdown-item" href="2nd-hand.html" class="nav-link">2nd-Hand</a></li>
+                    <li><a class="dropdown-item" href="Sold.html" class="nav-link">Sold</a></li>
+                 </ul>
+            </div>
+          </li>
         </ul>
+        <div>
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="sellPage.html" class="nav-link btn">Sell</a></li>
+                <li class="nav-item"><a href="mainBuy.html" class="nav-link btn">Buy+</a></li>
+            </ul>
+        </div>
+      </div>
     </div>
-    <div>
-        <ul class="navbar-nav">
-            <li class="nav-item"><a href="sellPage.html" class="nav-link btn">Sell</a></li>
-            <li class="nav-item"><a href="mainBuy.html" class="nav-link btn">Buy+</a></li>
-        </ul>
-    </div>
-</nav>
+  </nav>
     <!--================== Navbar Section End ==================-->
 
-<!--**************Popular Car Section Start*****************-->
+<!--**************2nd Hand Car Section Start*****************-->
 <section>
-    <div class="popular container">
-        <div class="content">
-            <h5>2nd-Hand Units</h5>
-            <a href="">View All</a>
-        </div>
-        <div class="row">
-            <div class="col-sm-3">
-                <div class="box">
-                    <img src="assets/images/2020-toyota-hilux-revo.png" class="img-fluid" 
-                   height="200px" width="200px" alt="Revo">
-                    <div class="box_content">
-                        <h6>2020 Toyota Revo</h6>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="box">
-                    <img src="assets/images/Toyota-Fortuner-TRD.png" class="img-fluid" 
-                   height="200px" width="200px" alt="Fortuner-trd">
-                    <div class="box_content">
-                        <h6>2020 Toyota Fortuner</h6>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="box">
-                    <img src="assets/images/nissan-navara.png" class="img-fluid" 
-                   height="200px" width="200px" alt="Navarra">
-                    <div class="box_content">
-                        <h6>2023 Nissan Navarra</h6>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="box">
-                    <img src="assets/images/frontier.png" class="img-fluid" 
-                   height="200px" width="200px" alt="Frontier">
-                    <div class="box_content">
-                        <h6>2022 Nissan Frontier</h6>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="box">
-                    <img src="assets/images/wildtrak.png" class="img-fluid" 
-                   height="200px" width="200px" alt="Wildtrak">
-                    <div class="box_content">
-                        <h6>2021 Ford Ranger Wildtrak</h6>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="box">
-                    <img src="assets/images/raptor.png" class="img-fluid" 
-                   height="200px" width="200px" alt="Raptor">
-                    <div class="box_content">
-                        <h6>2022 Ford Ranger Raptor</h6>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="box">
-                    <img src="assets/images/innova-medium-silver.png" class="img-fluid" 
-                   height="200px" width="200px" alt="Innova">
-                    <div class="box_content">
-                        <h6>2020 Toyota Innova</h6>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="box">
-                    <img src="assets/images/montero.png" class="img-fluid" 
-                   height="200px" width="200px" alt="Montero">
-                    <div class="box_content">
-                        <h6>2020 Mitsubishi Montero Sports</h6>
-                    </div>
-                </div>
+    <div class="container">
+        <div class="box">
+            <b></b>
+            <img src="assets/images/rush.png" class="img-fluid" alt="rush">
+            <div class="content">
+                <h2>2018 Toyota Rush G<br>
+                <span>Automatic</span></h2>
+                <ul class="sci">
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li> 
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+                </ul>
             </div>
         </div>
-
+        <div class="box">
+            <b></b>
+            <img src="assets/images/mobillo.png" class="img-fluid" alt="mobillo">
+            <div class="content">
+                <h2>2018 Honda mobillo<br>
+                <span>Manual</span></h2>
+                <ul class="sci">
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li> 
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="box">
+            <b></b>
+            <img src="assets/images/van.jpg" class="img-fluid" alt="Van">
+            <div class="content">
+                <h2>2018 Nissan NV350<br>
+                <span>Manual Transmission</span></h2>
+                <ul class="sci">
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li> 
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                </ul>
+            </div>
+            </div>
+            <div class="box">
+                <b></b>
+                <img src="assets/images/van.jpg" class="img-fluid" alt="Van">
+                <div class="content">
+                    <h2>2018 Nissan NV350<br>
+                    <span>Manual Transmission</span></h2>
+                    <ul class="sci">
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li> 
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                    </ul>
+                </div>
+                </div>
+        <div class="box">
+            <b></b>
+            <img src="assets/images/van.jpg" class="img-fluid" alt="Van">
+            <div class="content">
+                <h2>2018 Nissan NV350<br>
+                <span>Manual Transmission</span></h2>
+                <ul class="sci">
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li> 
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                </ul>
+            </div>
+            </div>
+            <div class="box">
+                <b></b>
+                <img src="assets/images/van.jpg" class="img-fluid" alt="Van">
+                <div class="content">
+                    <h2>2018 Nissan NV350<br>
+                    <span>Manual Transmission</span></h2>
+                    <ul class="sci">
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li> 
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                    </ul>
+                </div>
+                </div>
+                <div class="box">
+                    <b></b>
+                    <img src="assets/images/van.jpg" class="img-fluid" alt="Van">
+                    <div class="content">
+                        <h2>2018 Nissan NV350<br>
+                        <span>Manual Transmission</span></h2>
+                        <ul class="sci">
+                            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li> 
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                        </ul>
+                    </div>
+                    </div>
+                    <div class="box">
+                        <b></b>
+                        <img src="assets/images/van.jpg" class="img-fluid" alt="Van">
+                        <div class="content">
+                            <h2>2018 Nissan NV350<br>
+                            <span>Manual Transmission</span></h2>
+                            <ul class="sci">
+                                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li> 
+                                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                            </ul>
+                        </div>
+                        </div>
     </div>
 </section>
-<!--**************Popular Car Section End*****************-->
-
-<!--**************Footer Section Start*****************-->
-<footer>
-    <a href="https://www.facebook.com/johanamiella/"><span>kodego Student</span> Arjohn Lopez WD58 (refresher's)</a>
-</footer>
-<!--**************Footer Section End*****************-->
-
+<!--**************2nd Hand Car Section End*****************-->
 
 <!--========= Script For Bootstrap =======-->
 <script src="js/jquery.js"></script>
